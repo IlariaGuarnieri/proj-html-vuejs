@@ -27,7 +27,9 @@ export default {
 <!-- navbar trasparente -->
       <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
-          <p class="first">NEX</p> <p class="second" >GEN</p>
+          <!-- logo fatto a mano -->
+          <!-- <p class="first">NEX</p> <p class="second" >GEN</p> -->
+          <img class="logo-nav" src="https://nexgen.codings.dev/wp-content/uploads/2021/03/logo.svg" alt="">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -102,9 +104,9 @@ export default {
     font-size: 1.1rem;
   }
 }
-  .first, .second{
-    margin-top:15px;
-  }
+  // .first, .second{
+  //   margin-top:15px;
+  // }
   a{
     color:white;
     margin-right:20px;
@@ -114,6 +116,9 @@ export default {
   }
   .container-fluid{
     margin-left:180px;
+  }
+  .logo-nav{
+    width: 100px;
   }
 
 
