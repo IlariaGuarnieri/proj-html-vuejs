@@ -6,12 +6,13 @@ export default {
       store
     }
   },
+  
 }
 </script>
 
 <template>
   <div class="text-center my-5">
-    main
+    FOOTER
   </div>
 </template>
 
