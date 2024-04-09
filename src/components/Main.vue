@@ -10,6 +10,7 @@ export default {
 </script>
 
 <template>
+  <!-- contiene le section  -->
   <div class="text-center my-5">
     main
   </div>

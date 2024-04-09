@@ -6,7 +6,8 @@ import '@fortawesome/fontawesome-free/js/all.js'
 export default {
   data() {
     return {
-      store
+      store,
+      arrayNavbar:['HOME','ABOUT','PROJECT','PROCESS'] //creo l'array per popolare dinamicamente la navbar
     }
   },
   
@@ -28,18 +29,17 @@ export default {
       <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
           <!-- logo fatto a mano -->
-          <!-- <p class="first">NEX</p> <p class="second" >GEN</p> -->
+            <!-- <p class="first">NEX</p> <p class="second" >GEN</p> -->
           <img class="logo-nav" src="https://nexgen.codings.dev/wp-content/uploads/2021/03/logo.svg" alt="">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">HOME</a>
-              <a class="nav-link" href="#">ABOUT</a>
-              <a class="nav-link" href="#">PROJECTS</a>
-              <a class="green nav-link" href="#">PROCESS</a>
-              <a class="nav-link" href="#">TESTIMONIALS</a>
+              <!-- dopo aver creato l'array lo ciclo tramite v-for e con le doppie graffe richiamo l'item che cicla gli elementi dell'array -->
+              <a
+              v-for="(item, index) in arrayNavbar" 
+              :key="index" class="nav-link" href="#">{{ item }}</a>
               <a class="nav-link" href="#"><i class="fa-regular fa-user"></i></a>
               <button class=" green-btn btn">GET IN TOUCH</button>
             </div>
@@ -48,7 +48,11 @@ export default {
       </nav>
       <h5>HUMAN RESOURCES</h5>
       <h1>Get More <br> Productivity</h1>
-      <p>Planning, recruitment and selection process and <br> performance evaluation of employees.</p>
+
+      <div class="text-left">
+        <span>Planning, recruitment and selection process and <br> performance evaluation of employees.</span>
+      </div>
+
       <div class="cont-btn">
         <button class="junbo-btn green-btn btn">GET IN TOUCH</button>
         <button class="junbo-btn btn light-btn">READ MORE</button>
@@ -68,6 +72,7 @@ export default {
   justify-content: space-around;
   p{
     padding-left:60px;
+    padding-top:10px;
   }
   .social{
     margin-right: 15px;
@@ -124,7 +129,7 @@ export default {
   h5{
     font-size: 15px;
     color:$nav-color;
-    margin-top:100px;
+    margin-top:80px;
     text-align: left;
     margin-left: 200px;
   }
@@ -134,16 +139,12 @@ export default {
     text-align: left;
     margin-left: 200px;
   }
-  p{
-    text-align: left;
-    margin-left: 200px;
-  }
   button{
     color: white;
     font-size: 15px;
     height: 35px;
   }
-  .cont-btn{
+  .cont-btn, .text-left{
     text-align: left;
     margin-left: 200px;
   }
@@ -154,5 +155,9 @@ export default {
   
 }
 
+.text-left{
+margin-bottom: 20px;
+color:#AEB1BC;
+  }
 
 </style>

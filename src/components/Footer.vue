@@ -8,43 +8,57 @@ export default {
   },
   
 }
+
 </script>
 
 <template>
-  <div class="contain-footer text-center my-5">
-    <h5>SEND A MESSAGE</h5>
-    <h1>Get in Touch</h1>
-    <p>We will respond to your message as soon as possible</p>
+<div class="container_footer">
+  <div class="container_sx">
+    <!-- footer -->
+    <div class="contain-footer text-center my-5">
+      <h5>SEND A MESSAGE</h5>
+      <h1>Get in Touch</h1>
+      <p>We will respond to your message as soon as possible</p>
 
-    <div>
-      <input type="text" placeholder="Name"> 
-      <input type="email" placeholder="Email">
-    </div>
-
-    <div>
-      <input type="text" placeholder="Phone"> <div class="dropdown">
-      <select class="form-select" aria-label="Default select example">
-        <option selected>Open this select menu</option>
-        <option value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-      </select>
-    </div>
-
-    <div>
-      <input type="textarea">
+      <div class="row">
+        <div class="col input_name d-flex">
+          <input type="text" class="form-control" placeholder="Name" aria-label="Name">
+          <input type="email" class="form-control" placeholder="Email" aria-label="Email"> 
+        </div>
+        <div class="info mb-3 mt-3 d-flex">
+        <input type="text" class="form-control" placeholder="Phone">
+        <input type="text" class="form-control" placeholder="More infoe" aria-label="info">
+      </div>
+      <div class="mb-3">
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div>
     </div>
 
     </div>
   </div>
+  </div>
+
+  <div class="container_dx">
+
+  </div>
+</div>
+
 </template>
 
 <style lang="scss" scoped>
 @import '../../src/assets/scss/partials/variables';
 
-.contain-footer{
+.container_footer{
+display:flex;
+}
+.container_sx{
+  width: 60%;
+  height:400px;
   background-color: black;
+  .contain-footer{
   color:white;
+  }
   h5{
     color: $nav-color;
     font-size: 15px;
@@ -57,9 +71,23 @@ export default {
     text-align: left;
     margin-left: 200px;
   }
-  .form-select{
-    width: 200px;
+  .col .input_name{
+    width:180px;
+    font-size:12px;
+    margin-right: 10px;
+  }
+  .input_name, .info{
+    margin-left:200px;
+  }
+  .info{
+    width:180px;
   }
 }
 
+
+.container_dx{
+  width: 40%;
+  height:400px;
+  background-color: rgb(190, 67, 67);
+}
 </style>

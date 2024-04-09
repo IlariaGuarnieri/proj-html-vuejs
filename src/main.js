@@ -1,4 +1,5 @@
-import 'bootstrap/dist/css/bootstrap.css' 
+import 'bootstrap/dist/css/bootstrap.css'
+// importare bootstrap js 
 import { createApp } from 'vue'
 import App from './App.vue'
 import '@fortawesome/fontawesome-free/css/all.css'
