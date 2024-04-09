@@ -1,5 +1,15 @@
 import { reactive } from 'vue'
 
 export const store = reactive ({
-  counter: 0
+    social:[
+      {
+        text: '<i class="fa-solid fa-phone"></i>' 
+      },
+      {
+        text: '<i class="fa-solid fa-location-dot"></i>'
+      },
+      {
+        text: '<i class="fa-solid fa-envelope"></i>'
+      }
+    ]
 })

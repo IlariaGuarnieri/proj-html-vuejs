@@ -1,5 +1,5 @@
 <script>
-import {store} from '../data/store'
+import {store} from '../data/store';
 export default {
   props:{
     arrayFooter: Array,
@@ -10,7 +10,11 @@ export default {
       // arrayFooter:['+1(305)1234-5678','hello@example.com','Main Avenue, 987']
     }
   },
-  
+  computed:{
+    socialMenu(){
+      return FooterInfo.social
+    }
+  }
 }
 
 </script>
@@ -57,11 +61,9 @@ export default {
     <p>Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit.</p>
 
     <div class="green">
-      <p 
-      v-for="(item, index) in arrayFooter"
-      :key="index">
-      <i class="fa-solid fa-phone"></i> {{item}}
-      </p>
+      <p v-for="(item, index) in store.social" :key="`s-${index}`"><a href="" v-html="item.text"></a></p>
+
+      <p v-for="(item, index) in arrayFooter" :key="index"><i class="fa-solid fa-phone"></i> {{item}}</p>
       
 
     </div>

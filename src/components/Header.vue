@@ -7,7 +7,7 @@ export default {
   data() {
     return {
       store,
-      arrayNavbar:['HOME','ABOUT','PROJECT','PROCESS'] //creo l'array per popolare dinamicamente la navbar
+      arrayNavbar:['HOME','ABOUT','PROJECT','PROCESS'] //creo l'array per popolare dinamicamente la navbar (sul footer l'array è in store.js)
     }
   },
   

@@ -1,6 +1,11 @@
 <script>
+import Firstsection from './partials/Firstsection.vue';
 import {store} from '../data/store'
+
 export default {
+  components:{
+    Firstsection
+  },
   data() {
     return {
       store

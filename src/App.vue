@@ -1,21 +1,18 @@
 <script>
 import Header from './components/Header.vue'
-import Main from './components/Main.vue'
+import Main from './components/Main.vue';
 import Footer from './components/Footer.vue';
+
 
 export default {
   components:{
     Header,
     Main,
-    Footer
+    Footer,
   },
   data(){
     return {
-      arrayFooter:[
-        '+1(305)1234-5678',
-        'hello@example.com',
-        'Main Avenue, 987'
-      ]
+      arrayFooter:[ '+1(305)1234-5678','hello@example.com','Main Avenue, 987'],
     }
   }
 }
@@ -24,6 +21,7 @@ export default {
 <template>
   <Header />
   <Main />
+  <!-- tramite :arrayFooter ="arrayFooter" stampo nel footer dinamicamente cio che c'è nell'array-->
   <Footer :arrayFooter ="arrayFooter"/>
 </template>
 
