@@ -46,7 +46,9 @@ export default {
           </div>
         </div>
       </nav>
-
+      <h5>HUMAN RESOURCES</h5>
+      <h1>Get More</h1>
+      <h1>Productivity</h1>
     </div>
   </div>
 </template>
@@ -119,6 +121,21 @@ export default {
   }
   .logo-nav{
     width: 100px;
+  }
+  h5{
+    font-size: 15px;
+    color:$nav-color;
+    margin-top:100px;
+    margin-right: 700px;
+  }
+  h1{
+    font-weight: bolder;
+    font-size: 50px;
+    background-color: $nav-color-transparent;
+    width:300px;
+    height:30px;
+    margin: 40px;
+    margin-bottom: 40px;
   }
 
 
