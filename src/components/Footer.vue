@@ -14,44 +14,96 @@ export default {
 <template>
 <div class="container_footer">
   <div class="container_sx">
-    <!-- footer -->
+    <!-- footer  sinistra-->
     <div class="contain-footer text-center my-5">
       <h5>SEND A MESSAGE</h5>
       <h1>Get in Touch</h1>
       <p>We will respond to your message as soon as possible</p>
 
       <div class="row">
-        <div class="col input_name d-flex">
-          <input type="text" class="form-control" placeholder="Name" aria-label="Name">
+        <div class="col d-flex info_name me-4">
+          <input  type="text" class="form-control me-4" placeholder="Name" aria-label="Name">
           <input type="email" class="form-control" placeholder="Email" aria-label="Email"> 
         </div>
-        <div class="info mb-3 mt-3 d-flex">
-        <input type="text" class="form-control" placeholder="Phone">
-        <input type="text" class="form-control" placeholder="More infoe" aria-label="info">
       </div>
-      <div class="mb-3">
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-      <div>
-    </div>
 
-    </div>
+        <div class="row">
+          <div class="col d-flex info_number me-4 mt-2">
+          <input type="text" class="form-control me-4" placeholder="Phone">
+          <input type="text" class="form-control" placeholder="More info" aria-label="info">
+        </div>
+      </div>
+
+      <div class="info_textarea me-4">
+        <textarea class="form-control mt-2" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+      </div>
+
+      <div class="btnn-sx">
+        <button class="green-btn btn mt-3">SEND</button>
+      </div>
+      
   </div>
   </div>
+
+<!-- footer destra -->
 
   <div class="container_dx">
+    <h3>Example Inc.</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur <br>adipisicing elit.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit.</p>
+
+    <div class="green">
+      <p><i class="fa-solid fa-phone"></i> +1(305)1234-5678</p>
+      <p><i class="fa-solid fa-envelope"></i> hello@example.com</p>
+      <p><i class="fa-solid fa-location-dot"></i> Main Avenue, 987</p>
+
+    </div>
+
+    <div>
+      <button type="button" class="btn ">VIEW MAP</button>
+    </div>
 
   </div>
 </div>
+
 
 </template>
 
 <style lang="scss" scoped>
 @import '../../src/assets/scss/partials/variables';
 
+// footer destra
 .container_footer{
 display:flex;
 }
+.container_dx{
+  width: 40%;
+  height:400px;
+  background-color: rgb(0, 0, 0);
+  h3{
+    color: white;
+    font-size: 18px;
+    margin-top: 45px;
+  }
+  p{
+    color: #AEB1BC;
+    font-size: 13px;
+  }
+  button{
+    border: 1px solid $nav-color;
+    color: white;
+    font-size: 12px;
+    height: 30px;
+  }
+  .green p{
+    color: $nav-color;
+  }
+}
+
+
+  
+// footer sinistra
+
 .container_sx{
   width: 60%;
   height:400px;
@@ -71,23 +123,36 @@ display:flex;
     text-align: left;
     margin-left: 200px;
   }
-  .col .input_name{
-    width:180px;
-    font-size:12px;
-    margin-right: 10px;
+  p{
+    color:#AEB1BC;
   }
-  .input_name, .info{
-    margin-left:200px;
+  .info_name, .info_number{
+    width: 100%;
+    margin-left: 200px;
   }
-  .info{
-    width:180px;
+  input, textarea{
+    background-color: #1D1D23;
+    border:#1D1D23;
   }
+  input::placeholder,
+  textarea::placeholder{
+    font-size: 13px;
+    color:#72747a;
+  }
+  .info_textarea{
+    margin-left: 200px;
+  }
+  button{
+      color: white;
+      font-size: 12px;
+      height: 30px;
+      background-color: $nav-color;
+      
+  }
+  .btnn-sx{
+    text-align: left;
+    margin-left: 200px;
+}
 }
 
-
-.container_dx{
-  width: 40%;
-  height:400px;
-  background-color: rgb(190, 67, 67);
-}
 </style>
