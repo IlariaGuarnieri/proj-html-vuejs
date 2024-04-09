@@ -1,9 +1,13 @@
 <script>
 import {store} from '../data/store'
 export default {
+  props:{
+    arrayFooter: Array,
+  },
   data() {
     return {
-      store
+      store,
+      // arrayFooter:['+1(305)1234-5678','hello@example.com','Main Avenue, 987']
     }
   },
   
@@ -53,9 +57,12 @@ export default {
     <p>Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit.</p>
 
     <div class="green">
-      <p><i class="fa-solid fa-phone"></i> +1(305)1234-5678</p>
-      <p><i class="fa-solid fa-envelope"></i> hello@example.com</p>
-      <p><i class="fa-solid fa-location-dot"></i> Main Avenue, 987</p>
+      <p 
+      v-for="(item, index) in arrayFooter"
+      :key="index">
+      <i class="fa-solid fa-phone"></i> {{item}}
+      </p>
+      
 
     </div>
 

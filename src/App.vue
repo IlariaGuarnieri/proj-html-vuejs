@@ -8,6 +8,15 @@ export default {
     Header,
     Main,
     Footer
+  },
+  data(){
+    return {
+      arrayFooter:[
+        '+1(305)1234-5678',
+        'hello@example.com',
+        'Main Avenue, 987'
+      ]
+    }
   }
 }
 </script>
@@ -15,7 +24,7 @@ export default {
 <template>
   <Header />
   <Main />
-  <Footer />
+  <Footer :arrayFooter ="arrayFooter"/>
 </template>
 
 <style lang="scss" scoped>
