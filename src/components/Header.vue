@@ -75,14 +75,13 @@ export default {
 }
 
 .jumbotron{
-  height: 650px;
+  height: 600px;
   width: 100%;
   background-image: url(../../src/assets/scss/img/bg-4.jpg);
   object-fit: cover;
   background-size:cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: rgba(0, 0, 0, 0.7);
   color: white;
   .green-btn{
     background-color:$nav-color;
