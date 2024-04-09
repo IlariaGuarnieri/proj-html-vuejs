@@ -47,8 +47,12 @@ export default {
         </div>
       </nav>
       <h5>HUMAN RESOURCES</h5>
-      <h1>Get More</h1>
-      <h1>Productivity</h1>
+      <h1>Get More <br> Productivity</h1>
+      <p>Planning, recruitment and selection process and <br> performance evaluation of employees.</p>
+      <div class="cont-btn">
+        <button class="junbo-btn green-btn btn">GET IN TOUCH</button>
+        <button class="junbo-btn btn light-btn">READ MORE</button>
+      </div>
     </div>
   </div>
 </template>
@@ -105,10 +109,6 @@ export default {
     font-weight: bolder;
     font-size: 1.1rem;
   }
-}
-  // .first, .second{
-  //   margin-top:15px;
-  // }
   a{
     color:white;
     margin-right:20px;
@@ -126,17 +126,34 @@ export default {
     font-size: 15px;
     color:$nav-color;
     margin-top:100px;
-    margin-right: 700px;
+    text-align: left;
+    margin-left: 200px;
   }
   h1{
     font-weight: bolder;
     font-size: 50px;
-    background-color: $nav-color-transparent;
-    width:300px;
-    height:30px;
-    margin: 40px;
-    margin-bottom: 40px;
+    text-align: left;
+    margin-left: 200px;
   }
+  p{
+    text-align: left;
+    margin-left: 200px;
+  }
+  button{
+    color: white;
+    font-size: 15px;
+    height: 35px;
+  }
+  .cont-btn{
+    text-align: left;
+    margin-left: 200px;
+  }
+  .light-btn{
+    border: 1px solid $nav-color;
+    margin-left: 20px;
+  }
+  
+}
 
 
 </style>
