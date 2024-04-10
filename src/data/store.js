@@ -29,5 +29,20 @@ export const store = reactive ({
         titolo:'Performance',
         testo:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dignissimo',
       }
+    ],
+
+    lastSectionCard:[
+      {
+        logo: '<img src="/img/logo-1.png" alt="">',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dignissimoLorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dignissimo Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dignissimo'
+      },
+      {
+        logo: '<img src="/img/logo-2.png" alt="">',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dignissimoLorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dignissimoLorem ipsum dolor sit amet consectetur '
+      },
+      {
+        logo: '<img src="/img/logo-3.png" alt="">',
+        text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dignissimoLorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dignissimo'
+      },
     ]
 })

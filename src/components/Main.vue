@@ -1,10 +1,12 @@
 <script>
 import Firstsection from './partials/Firstsection.vue';
+import Lastsection from '../components/Lastsection.vue';
 import {store} from '../data/store'
 
 export default {
   components:{
-    Firstsection
+    Firstsection,
+    Lastsection
   },
   data() {
     return {
@@ -18,6 +20,8 @@ export default {
   <!-- contiene le section  -->
   <div class="text-center">
     <Firstsection/>
+    <Lastsection />
+
   </div>
 </template>
 

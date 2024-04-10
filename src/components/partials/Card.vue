@@ -1,7 +1,7 @@
 <script>
 export default {
   props:{
-// card è il nome che ho scelto per la mia props, vedi first section riga 23
+// card è il nome che ho scelto per la mia props, vedi Firstsection riga 23
 // object perche il mio item in store.js è un oggetto
     card: Object
   }
