@@ -17,7 +17,7 @@ export default {
 <template>
   <!-- contiene le section  -->
   <div class="text-center my-5">
-    main
+    <Firstsection/>
   </div>
 </template>
 

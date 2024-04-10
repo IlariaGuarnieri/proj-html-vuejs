@@ -12,4 +12,9 @@ export const store = reactive ({
         text: '<i class="fa-solid fa-location-dot"></i> Main Avenue, 987'
       },
     ]
+    cardFirst:[
+      {
+        
+      }
+    ]
 })
