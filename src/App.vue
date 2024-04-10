@@ -12,7 +12,7 @@ export default {
   },
   data(){
     return {
-      arrayFooter:[ '+1(305)1234-5678','hello@example.com','Main Avenue, 987'],
+      // arrayFooter:[ '+1(305)1234-5678','hello@example.com','Main Avenue, 987'],
     }
   }
 }
@@ -22,7 +22,7 @@ export default {
   <Header />
   <Main />
   <!-- tramite :arrayFooter ="arrayFooter" stampo nel footer dinamicamente cio che c'è nell'array-->
-  <Footer :arrayFooter ="arrayFooter"/>
+  <Footer :arrayFooter ="arrayFooter" />
 </template>
 
 <style lang="scss" scoped>

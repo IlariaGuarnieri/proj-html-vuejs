@@ -7,9 +7,11 @@ export default {
 </script>
 
 <template>
-  <div class="card" style="width: 16rem; height:14rem;">
+  <div class="card" style="width: 16rem; height:16rem;">
     <div class="card-body">
-      <p class="logo" v-html="lastcard.logo"></p>
+      <div class="cont_buu">
+        <p class="buu" v-html="lastcard.logo"></p>
+      </div>
       <p class="card-text">{{lastcard.text }}</p>
     </div>
   </div>
@@ -19,25 +21,29 @@ export default {
 <style lang="scss" scoped>
 @use '../../assets/scss/partials/_variables.scss' as * ;
 
-.card-title, .card-text{
+.card-text{
     text-align: left;
 }
-  .card-title{
-    font-size:18px;
-  }
-  .card-text{
-    font-size: 14px;
-    color: rgb(134, 134, 134);
-  }
-  .card{
-    display: flex;
-    margin-right: 50px;
-    justify-content: center;
-    border-color: $color-first-section;
-    border-radius: 10px;
-  }
+.card-title{
+  font-size:18px;
+} 
+.card-text{
+  font-size: 14px;
+  color: rgb(134, 134, 134);
+}
+.card{
+  display: flex;
+  margin-right: 50px;
+  justify-content: center;
+  border-color: $color-first-section;
+  border-radius: 10px;
+}
 
-  p .logo{
-    width: 10px;
+.cont_buu{
+  .buu img{
+    width: 30px;
+    height: auto;
+    
   }
+}
 </style>

@@ -73,9 +73,9 @@ export default {
     </div>
 
     <div class="green">
-      <div v-for="(item, index) in arrayFooter" :key="index">
+      <div v-for="(item, index) in store.arrayFooter" :key="index">
         <p style="display: inline-block; margin-right: 10px;">
-          <i class="fa-solid" :class="item.iconClass"></i> {{item.text}}
+          <i class="fa-solid" :class="item.iconClass"></i> {{store.item}}
         </p>
       </div>
     </div>
