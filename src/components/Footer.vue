@@ -23,7 +23,7 @@ export default {
 <div class="container_footer">
   <div class="container_sx">
     <!-- footer  sinistra-->
-    <div class="contain-footer text-center my-5">
+    <div class="contain-footer text-center mt-5">
       <h5>SEND A MESSAGE</h5>
       <h1>Get in Touch</h1>
       <p>We will respond to your message as soon as possible</p>
@@ -55,22 +55,33 @@ export default {
 
 <!-- footer destra -->
 
-  <div class="container_dx">
+  <div class="container_dx pt-5 ">
     <h3>Example Inc.</h3>
     <p>Lorem, ipsum dolor sit amet consectetur <br>adipisicing elit.</p>
     <p>Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit.</p>
 
+    <!-- <div class="green"> -->
+      <!-- ciclo le icone il cui array di oggetti è in store.js -->
+      <!-- <p v-for="(item, index) in store.social" :key="`s-${index}`"> <a href="" v-html="item.text"> </a></p>
+      <p v-for="(item, index) in arrayFooter" :key="index"> {{item}}</p>
+
+    </div> -->
+
     <div class="green">
-      <p v-for="(item, index) in store.social" :key="`s-${index}`"><a href="" v-html="item.text"></a></p>
-
-      <p v-for="(item, index) in arrayFooter" :key="index"><i class="fa-solid fa-phone"></i> {{item}}</p>
-      
-
+  <!-- ciclo le icone il cui array di oggetti è in store.js -->
+      <p v-for="(item, index) in store.social" :key="`s-${index}`" v-html="item.text"></p>
     </div>
 
-    <div>
-      <button type="button" class="btn ">VIEW MAP</button>
+    <div class="green">
+      <div v-for="(item, index) in arrayFooter" :key="index">
+        <p style="display: inline-block; margin-right: 10px;">
+          <i class="fa-solid" :class="item.iconClass"></i> {{item.text}}
+        </p>
+      </div>
     </div>
+
+
+    
 
   </div>
 </div>
@@ -92,7 +103,6 @@ display:flex;
   h3{
     color: white;
     font-size: 18px;
-    margin-top: 45px;
   }
   p{
     color: #AEB1BC;
