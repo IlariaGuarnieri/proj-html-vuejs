@@ -35,11 +35,12 @@ export default {
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+            <div class="navbar-nav d-flex ">
               <!-- dopo aver creato l'array lo ciclo tramite v-for e con le doppie graffe richiamo l'item che cicla gli elementi dell'array -->
               <a
               v-for="(item, index) in arrayNavbar" 
               :key="index" class="nav-link" href="#">{{ item }}</a>
+
               <a class="nav-link" href="#"><i class="fa-regular fa-user"></i></a>
               <button class=" green-btn btn">GET IN TOUCH</button>
             </div>
@@ -119,6 +120,8 @@ export default {
   }
   .navbar-nav{
     margin-left: 100px;
+    text-align: right;
+    // justify-content: space-around;
   }
   .container-fluid{
     margin-left:180px;

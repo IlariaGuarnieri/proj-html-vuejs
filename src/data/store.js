@@ -11,10 +11,23 @@ export const store = reactive ({
       {
         text: '<i class="fa-solid fa-location-dot"></i> Main Avenue, 987'
       },
-    ]
-    cardFirst:[
+    ],
+
+    firstSectionCard:[
       {
-        
+        icona:'<i class="fa-solid fa-user-group"></i>',
+        titolo:'Human Capital',
+        testo:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dignissimos',
+      },
+      {
+        icona:'<i class="fa-solid fa-chart-pie">',
+        titolo:'Core Business',
+        testo:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ',
+      },
+      {
+        icona:'<i class="fa-regular fa-clock"></i>',
+        titolo:'Performance',
+        testo:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dignissimo',
       }
     ]
 })
